@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main_my.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            /* background: #f1f1f1; */
+        }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+    <div class="btn-group">
+        <a href="knowledge.html">  <button class="test">Seeking knowledge </button> </a>
+        <a href="music.html">   <button class="test">Music </button> </a>
+      </div>
+  </div>
+  
+  <div id="main">
+  <button  onclick="openNav()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+    </button>  
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+<div class="topnav-index"> 
+    <div class="topnav-right"> 
+  <a href="index.html" class="button">Home Page</a> 
+  <a href="music.html" class="button">Music</a> 
+  <a href="knowledge.html" class="button"> Knowledge</a> 
+  <!-- <a href="data.html" class="button" style="margin:5px">Data</a>  -->
+  <!-- <a href="python_utils.html" class="button" style="margin:5px">Python Utils</a>  -->
+  <!-- <a href="activities.html" class="button" style="margin:5px">Other Activities</a> -->
+  <!-- <a href="knowledge.html" class="button" style="margin:5px">Seeking knowledge</a>  -->
+    </div>
+  </div>
+
+
+    <div class="header">
+            <hr class="major">
+        <h1>Beyond Physics and Atrophysics  </h1>
+        <hr class="major">
+        <h5>Here there are a list of things I do along side Physics and Astrophysics</h5>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <hr class="text">
+                <h2>Resistance Movement in peripheral regions of São Paulo</h2>
+                <h3>Anhanguera, Luta & Resistência - ALR</h3>
+
+                <div class="fakeimg">
+                    <div class="text">
+                        <p> 
+                        The objectives of the group is to act as a resistance entity, given 
+                        the atual situation of Brasil, where education was trown apart, 
+                        where individualities are no more respected; where black people
+                        are being killed and disrimined. 
+                        </p>
+                        <p> 
+                        Currently, the group has a project to recover the memories of 
+                        Morro Doce, a peripheral region of the city of São Paulo. 
+                        How this neighborhood originated past years ago and how it evolved 
+                        until today. Interviews are being made with people livin there, 
+                        and in sequence a magazie will be written to show to everyone the results. 
+                        The main issue in this is that there is a "collective memeory" in the 
+                        neighborhood saying that it originated from some specific situation, 
+                        but in fact, that is not completelly wright. So, that question is investigated 
+                        in the project. 
+                        </p>    
+                        You can find more info <a href="http://anhanguera-lr.github.io" style="color: greenyellow;"> here</a> .
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr class="text">
+            <h2>Voluntary professor of Physics</h2>
+            <h3> Teaching Elementary Physics For High-School Students </h3>
+            <div class="fakeimg">
+                <div class="text">
+                
+                    <p>
+                        The social project is called CAPACITA-ME Pré-Vestibular (se about CAPACITA-ME
+                        <a href="http://capacitame.net/ " style="color: greenyellow;">here</a>).
+                        The material from the lectures is found here: 
+                        <a href="files/material_fisica_aula_1.pdf" style="color: greenyellow;">Lecture 1</a> 
+                        and 
+                        <a href="files/material_fisica_mecanica_newton.pdf" style="color: greenyellow;" >Lecture 2</a>.
+
+                    </p>
+                
+                </div>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <!-- <div class="card"> -->
+                <!-- <h2>About Me</h2> -->
+            <!-- </div> -->
+            <!-- <div class="card"> -->
+                <!-- <h3>Popular Post</h3> -->
+                <!-- <div class="fakeimg"> -->
+                    <!-- <p>Image</p> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>

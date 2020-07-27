@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main_my.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            /* background: #f1f1f1; */
+        }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+    <div class="btn-group">
+        <a href="knowledge.html">  <button class="test">Seeking knowledge </button> </a>
+        <a href="activities.html">   <button class="test">Activities </button> </a>
+      </div>
+  </div>
+  
+  <div id="main">
+  <button  onclick="openNav()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+    </button>  
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+<div class="topnav-index"> 
+    <div class="topnav-right"> 
+  <a href="index.html" class="button">Home Page</a> 
+  <a href="activities.html" class="button">Activities</a> 
+  <a href="knowledge.html" class="button"> Knowledge</a> 
+  <!-- <a href="data.html" class="button" style="margin:5px">Data</a>  -->
+  <!-- <a href="python_utils.html" class="button" style="margin:5px">Python Utils</a>  -->
+  <!-- <a href="activities.html" class="button" style="margin:5px">Other Activities</a> -->
+  <!-- <a href="knowledge.html" class="button" style="margin:5px">Seeking knowledge</a>  -->
+    </div>
+  </div>
+
+
+    <div class="header">
+            <hr class="major">
+        <h1>Music I listen to  </h1>
+        <hr class="major">
+        <h5>Range from Rock (prog, hard, heavy, metal, indie, alternative,...), MPB, electronic music, cyberpunk, etc. </h5>
+        <h5>I am very, very eclectic</h5>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <!-- <div class="card"> -->
+                <hr class="text">
+                <h2>Tracking music history</h2>
+                <h4>Bellow, there is my page on Last.fm, a social network destined to track music people listem to.</h4>
+                <div id="last">
+                    <p><a href="http://www.last.fm/user/comic_coder/now"><img id="artwork" src=""></a></p><div id="track"></div>
+                  </div>
+                
+                <div class="fakeimg">
+                    <div class="text">
+                    </div>
+                </div>
+            <!-- </div> -->
+
+        </div>
+        <div class="rightcolumn">
+            <!-- <div class="card"></div> -->
+            <!-- <div class="vl"></div> -->
+            <!-- <hr class="text"> -->
+            <div class="center">
+                    <h6>Where do I find music?</h6>
+            </div>
+
+            <a href="https://murodoclassicrock4.blogspot.com/"> <h4>Muro do Classick Rock</h4> </a>
+            Thousand of Rock bands to search and download.
+            <br> <br><br>
+
+            <h4> Torrent :) </h4>
+            <a href="https://www.1377x.to/" style="color: greenyellow;"> 1337x </a>,
+            <a href="https://thepiratebay.org/" style="color: greenyellow;"> TPB </a>
+            <br><br><br>
+                        <!-- </div> -->
+            <!-- <div class="card"> -->
+                <!-- <h3>Popular Post</h3> -->
+                <!-- <div class="fakeimg"> -->
+                    <!-- <p>Image</p> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="footer">
+            <h4>	&copy; 2019.  Developed by Geferson Lucatelli</h4>
+    </div>
+    
+
+</body>
+
+</html>

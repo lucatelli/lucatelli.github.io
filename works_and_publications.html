@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main_my.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            /* background: #f1f1f1; */
+        }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body>
+  <!-- Sidebar -->
+
+  <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="btn-group">
+            <a href="notes_on_physics.html">      <button class="test">$\LaTeX$ notes </button> </a>
+            <a href="presentations.html">          <button class="test">Presentations </button> </a>
+            <a href="general_documents.html">  <button class="test">Other documents </button> </a>
+          </div>
+      </div>
+      
+      <div id="main">
+      <button  onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+        </button>  
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+    
+    <div class="topnav-index"> 
+            <div class="topnav-right"> 
+                <a href="index.html" class="button" >Home Page</a>
+                <a href="kurvature.html" class="button" >$\kappa$urvature</a>
+                <a href="http://lattes.cnpq.br/3587406605811914" class="button" >Lattes Curriculum vitae</a>
+                <!-- <a href="works_and_publications.html" class="button" > -->
+                    <!-- Works <i>&amp;</i>&nbsp;Pulbications</a> -->
+                <!-- <a href="kurvature.html" class="button" >$\kappa$urvature</a> -->
+            </div>
+    </div>
+
+    <div class="header">
+        <hr class="major">
+        <h1>
+            <!-- <hr class="major"> -->
+            Works & Publications
+            <!-- <hr class="major"> -->
+        </h1>
+        <hr class="major">
+        <!-- <p>Resize the browser window to see the effect.</p> -->
+    </div>
+
+
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                    <hr>
+                <header class="main">
+					<h1>Published Articles (chronological order)</h1>
+				</header>
+                <section>	
+					<div >
+					<p>
+                    1. Lucatelli, G. and Ferrari, F. Galaxy structural analysis with the 
+                    curvature of the brightness profile. <i>Monthly Notices of the Royal 
+                    Astronomical Society,</i> Volume 489, Issue 1, October 2019, Pages 1161–1180,
+                    <a href="https://doi.org/10.1093/mnras/stz2154">doi:10.1093/mnras/stz2154</a>. 
+                    </p>
+                    <p>
+                    2. Roman-Oliveira, F.; Chies-Santos, L. A.; Ferrari, F.; Lucatelli, L.; 
+                    Del Pino, R.B. 
+                    Morphometry as a probe to the evolution of jellyfish galaxies: evidence 
+                    for a dual distribution of Sérsic indices in A901/2. <i>
+                        <!-- Monthly Notices of  -->
+                    <!-- the Royal Astronomical Society,</i>, Vol xxx, Isue zzz, 2019  -->
+                    (preprint).</i>
+                    <a href="">  </a>
+                    </p>
+					
+                    <br>
+                    
+					<hr class="text" />
+					<h2>Other Works</h2>
+					<h3>Master Thesis</h3>
+					<p>
+					 In this work we introduce the curvature of a galaxy brightness profile to 
+					 non-parametrically identify its structural subcomponents. Bulges, bars, disks, 
+					 lens, rings, spiral arms and so on, are a key to understanding the formation and
+					 evolutionary paths the galaxy undertook. Their identification is also crucial for the
+					 morphological classification of galaxies. We measure and analyse in detail the 
+					 curvature of $16$ galaxies with varied morphology. High (low) steepness 
+					 profiles show high (low) absolute curvature measures. 
+					 Transitions between components present  high values of the curvature.  
+					 With this new tool we identify patterns that characterise bulges (pseudo or 
+					 classic), disks, bars, rings, spiral arms. The procedure can be automated in 
+					 a future study to deal with large datasets and identify galaxy components 
+					 automatically, or to provide a reliable starting point for traditional multi 
+					 components modelling of galaxy light distribution. For a complementary 
+					 study, which leaded us to introduce the curvature, we investigate 
+					 the behaviour of single-Sérsic fits (e.g. single Sérsic index $n$) is and 
+					 concentration index $C$ for multicomponent galaxies. We have obtained that these 
+					 galaxies have systematically high values of $n$ and $C$ comparable to the ones 
+					 measured in single component galaxies, thus resulting in misclassification of them. 
+					</p>
+					<embed src="files/disssertacao_vfinal_recorrecoes_maio_geferson_120640.pdf" width="100%" height="920" type="application/pdf"><br>
+					<a href="https://argo.furg.br/?BDTD12190">Download</a>
+                    
+                    <hr class="text" />
+                    <br>
+
+					<h3>Graduation Thesis</h3>
+					<p>
+                    The objective of this work is to do a photometric and morphometric 
+                    analysis of simulated images of galaxies, composed by a bulge and a disk.
+                    The morphological classification of galaxies has as main objective the understanding of how these
+                    physical systems had formed and how they evolve. The way to do this, morphometry, has been widely
+                    applied in observational data, therefore, it is not an easy task to obtain information about the intrinsic
+                    parameters. In this sense it is useful apply such measurements in objects in which these quantities are
+                    known. Thus it was created mock images of galaxies with the use of the Sersic Law, combining in many
+                    ways the bulge and disk components wherein the quantities $R_b$, $I_b$, $n_b$, $R_d$, $I_d$ and the 
+                    luminosity ratio $\xi_{BD} = L_B/L_T$ are changed.
+                    After the data set was created, composed by 480 mock images, an analysis was applied with the
+                    use of Morfometryka algorithm, with the aim to investigate the behavior of the morphometric
+                    indices concentration $C_1$ and $C_2$, belonging to the CASGM system ( concentration $C$, asymmetry $A$,
+                    smoothness $S$, Gini $G$ and momentum of light $M$), and the effective Sersic quantities $R_{nef}$ , 
+                    $I_{nef}$, $n_{ef}$, since they are the parameters obtained from the image.
+                    The results found show that the effective Sersic index $n_{ef}$ can range a large interval and in some cases
+                    do not represent physically the “real” galaxy structure. Also, the value of nef in the transition region
+                    between the disk Sersic index and the bulge Sérsic Index can be higher for the last. Besides that, the ´
+                    concentration index was greatly affected by the bulge+disc composition. Furthermore, it was identified
+                    that both nef and $C_1$ and $C_2$ are degenerate quantities, that is different structures can result in 
+                    the same
+                    values for these quantities.
+                    </p>
+                    <embed src="files/tcc_geferson_v5.pdf" width="100%" height="920" type="application/pdf"><br>
+                    <!-- <iframe src="https://drive.google.com/file/d/1EpfDvLNtfCGP1EAzjCRYupiqg_iBjb_h/view?usp=sharing" width="100%" height="920" type="application/pdf"></iframe><br> -->
+                        <a href="https://drive.google.com/open?id=1EpfDvLNtfCGP1EAzjCRYupiqg_iBjb_h">Download (this version is not corrected)</a>
+    
+
+					<!-- <hr class="major" /> -->
+
+					<!-- <h2>Lorem aliquam bibendum</h2> -->
+				</div>	
+			</section>
+            </div>
+            <!-- <div class="card">
+                <h2>TITLE HEADING</h2>
+            </div> -->
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <!-- <h2>About Me</h2> -->
+                <!-- <div class="fakeimg" style="height:100px;">Image</div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2> Lucatelli.pro</h2>
+    </div>
+
+</body>
+
+</html>

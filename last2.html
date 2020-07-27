@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=GefNRock&api_key=623f9658a42636eea867ae8a39a8b490&format=json"></script>
+             <script type="text/javascript" >
+                function load() {
+                     var mydata = JSON.parse(data);
+                     alert(mydata.length);
+
+                     var div = document.getElementById('data');
+
+                     for(var i = 0;i < mydata.length; i++)
+                     {
+                        div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].name +"</p>" + "<br>";
+                     }
+                 }
+        </script>
+    </head>
+    <body onload="load()">
+    <div id= "#text">
+
+    </div>
+    </body>
+</html>

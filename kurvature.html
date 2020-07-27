@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main_my.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            /* background: #f1f1f1; */
+        }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+
+  <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="btn-group">
+            <a href="notes_on_physics.html">      <button class="test">$\LaTeX$ notes </button> </a>
+            <a href="presentations.html">          <button class="test">Presentations </button> </a>
+            <a href="general_documents.html">  <button class="test">Other documents </button> </a>
+          </div>
+      </div>
+      
+      <div id="main">
+      <button  onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+        </button>  
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+    
+    <div class="topnav-index"> 
+            <div class="topnav-right"> 
+                <a href="index.html" class="button" >Home Page</a>
+                <a href="data.html" class="button">Data</a>
+                <a href="python_utils.html" class="button">Python Utils</a>
+        
+            </div>
+    </div>
+
+    
+    <div class="header">
+        <hr class="major">
+        <h1>$\kappa$urvature</h1>
+        <hr class="major">
+        <!-- <p>Resize the browser window to see the effect.</p> -->
+    </div>
+
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <header class="main">
+                    <hr class="text">
+                    <h1>Curvature For Galaxy Structural Analysis</h1>
+                </header>
+                
+                NOTE: Page under development. Now, I am testing some $\LaTeX$ typesetting in HTML (not 
+                figures of equations...).
+                <br><br><br>
+                <section>
+                    <div class="center">
+                    <!-- <hr class="text"> -->
+                        <h2 id="content">1 | A little about curvature</h2>
+                    </div>
+                    <!-- Content -->
+                    <h6 id="content">1.1 | Introduction</h6>
+                    <p>The curvature is introduced as a new non-parametric tool for galaxy structural 
+                        analysis....
+                    </p>
+
+
+                    <hr class="major" />
+                    <h6 id="content">1.2 | What is curvature in differential geometry?</h6>
+                    <p>From differential geometry we have
+                        $$
+                            \widetilde{\kappa}(R) = \frac{d^2 I}{d R^2} 
+                            \left[ 
+                            1+ \left( \frac{d I}{dR} \right)^2
+                            \right]^{-3/2}
+                        $$
+                    </p>
+
+
+                    <p>
+                            The Riemann curvature tensor is 
+                            \begin{align}
+                            R^{\kappa}_{\lambda \mu \nu}  = \Gamma^{\kappa}_{\lambda \nu, \mu}
+                             - \Gamma^{\kappa}_{\lambda \mu, \nu} + \Gamma^{\kappa}_{\rho \mu}\Gamma^{\rho}_{\lambda \nu} - \Gamma^{\kappa}_{\rho \nu} \Gamma^{\rho}_{\lambda \mu}
+                            \end{align}                            
+                    </p>
+More tests....
+                    <p>
+                            \begin{align}
+                            \phi_n =
+                            \frac{2n\pi}{1-\dfrac{3GM}{c^2 a_0(1-e^2)}}, \quad n=0,1,2...
+                            \end{align}
+
+                    </p>
+                    <p>
+                            \begin{align}
+                            g_{\mu \nu } = {\rm diag} \left[
+                            -\left(1 - \frac{2GM}{rc^2} \right) , \left(1 - 
+                            \frac{2GM}{rc^2} \right)^{-1},r^2, r^2 \sin^2 \theta\right]
+                            \end{align}
+                    </p>
+
+                    <hr class="major" />
+
+
+                    <h2 id="content">2 | $\kappa$urvature in Medical Sciences </h2>
+
+                    <hr class="major" />
+
+
+                    <h2 id="content">2 | How $\kappa$urvature can be used in galaxy morphology </h2>
+                    <hr class="major" />
+
+                    <h2 id="content">3 | Annimations & Cartoons</h2>
+                    <p>Bellow... (testing some videos)
+                    </p>
+                    <div class="row">
+                        <div class="column">
+                            <video width="800" height="400" controls>
+                                <source src="videos/ngc1211_curvature_2.mp4">
+                                <!-- <source src="videos/ngc4267_curvature_2.mp4" type="mp4"> -->
+                              </video>
+                              <p>Curvature for NGC1211 from EFIGI. </p>
+                        </div>
+                        <div class="column">
+                            <video width="800" height="400" controls>
+                                <source src="videos/ngc4267_curvature_2.mp4">
+                                <!-- <source src="videos/ngc4267_curvature_2.mp4" type="mp4"> -->
+                              </video>
+                              <p>Curvature for NGC4267 from EFIGI. </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="card">
+                <!-- <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <!-- <h2>About Me</h2> -->
+                <!-- <div class="fakeimg" style="height:100px;">Image</div> -->
+            </div>
+            <div class="card">
+                <!-- <div class="fakeimg">
+                    <p>Image</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- <h2>Footer</h2> -->
+    </div>
+
+</body>
+
+</html>

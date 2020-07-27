@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main_my.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            /* background: #f1f1f1; */
+        }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body>
+  <!-- Sidebar -->
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+    <div class="btn-group">
+        <a href="index_my.html">      <button class="test">Home Page </button></a>
+        <a href="meetings.html">      <button class="test">Meetings </button> </a>
+        <a href="data.html">          <button class="test">Data </button> </a>
+        <a href="python_utils.html">  <button class="test">Python Utils </button> </a>
+      </div>
+  </div>
+
+  <div id="main">
+  <button  onclick="openNav()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+    </button>
+  </div>
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+
+
+    <div class="topnav-index">
+        <div class="topnav-right">
+            <a href="index.html" class="button" >Home Page</a>
+            <a href="works_and_publications.html" class="button" >
+                Works <i>&amp;</i>&nbsp;Pulbications</a>
+            <a href="kurvature.html" class="button" >$\kappa$urvature</a>
+        </div>
+    </div>
+
+
+    <div class="header">
+        <hr class="major">
+        <h1>Astrophysical Research</h1>
+        <hr class="major">
+        <!-- <p>Resize the browser window to see the effect.</p> -->
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h1>My Research Interests (in development)</h1>
+                <hr class="text" /><br>
+
+                <div class="align-justify">
+
+                <p>
+                  I am interested in studying the structure of galaxies. Each
+                galaxy has its own combination of components and that is
+                related to the way the light is emitted by them. It is well know
+                that such components can be bulges, pseudo-bulges, bars, disks,
+                rings, spiral arms, lens, among others. The combination of these
+                structures shapes the properties of galaxies: they can be spheroidal, lenticular,
+                flattened objects, elongated, irregular and so on.
+              </p>
+
+               </div>
+                <!-- <h5>Title description, Dec 7, 2017</h5> -->
+                <h2>Galaxy Morphology (need to add a lot of things)</h2>
+                <span class="image main">
+                    <img src="images/Hubble_-_de_Vaucouleurs_Galaxy_Morphology_Diagram.png" alt="" />
+                    <figcaption>Hubble-De Vaucouleurs Diagram.
+                                Source: <a href="https://en.wikipedia.org/wiki/File:Hubble_-_de_Vaucouleurs_Galaxy_Morphology_Diagram.png">Wikipedia</a>.
+                                Credits: Antonio Ciccolella / M. De Leo
+                    </figcaption>
+                </span>
+                <br><br>
+                <div >
+                    <p>
+                        Galaxy morphology is one of the keys to unveil how galaxies formed and evolved across different cosmic times and environments in the Universe. Therefore, the understanding of the underling structure of galaxies in a precise way is a crucial information
+                        that can be used for such studies and galaxy morphological classification. <br><br> In a recent paper (Lucatelli and Ferrari, $2019$) we have introduced the curvature of the brightness profile
+                        $\widetilde{\varkappa}(R)$ for galaxy structural analysis. In this research we use the curvature as a new non-parametric approach to identify different structural components in a galaxy, such as bulges, bars, rings, disks
+                        and spiral arms, as well distinguish ellipticals from spirals and lenticular galaxies. <br><br> In sequence of that work (the current research) we show that the curvature can be suitable and automated for the identification
+                        of galaxy subcomponents. This method can constrain the scale length of each component thus assist or validate some standard techniques of structural analysis, such as the profile fitting of multiple parametric functions
+                        (e.g. Sérsic). Furthermore, after all image processing procedures (filtering, cleaning, etc), the curvature demonstrated to be little affected by image resolution and signal-to-noise ratio, therefore it may be used for
+                        galaxies in a high redshift regime.<br><br> Our conclusions are that local peaks in the curvature profile indicates the transition regions of different components and the shape of curvature in that regions is intrinsically
+                        related to specific structural components. Thus the overall shape of the curvature over all galaxy radius give us a hint of its morphology.
+                    </p>
+                    </div>
+            </div>
+            <hr class="text" />
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Developed by Lucatelli</h3>
+        <!-- <h4>Some credits from w3schools</h4> -->
+    </div>
+
+</body>
+
+</html>

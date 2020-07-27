@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main_my.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial;
+            padding: 10px;
+            /* background: #f1f1f1; */
+        }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Python</h1>
+        <!-- <h5>Hello my friend, I am Geferson Lucatelli and I am an Astrophysicist</h5> -->
+        <!-- <h5>You are on my website. A place to share knowledge, useful matertials and  -->
+            <!-- to keep update of what I do. -->
+        <!-- </h5> -->
+    </div>
+
+    <div class="topnav">
+        <a href="index.html" class="button" style="margin:5px">Home Page</a>
+        <a href="my_research.html" class="button" style="margin:5px">My Research</a>
+        <a href="works_and_publications.html" class="button" style="margin:5px" >
+            Works <i>&amp;</i>&nbsp;Pulbications</a>
+        <a href="data.html" class="button" style="margin:5px" >Data</a>
+        <a href="python_utils.html" class="button" style="margin:5px" >Python Utils</a>
+        <a href="stuff.html" class="button" style="margin:5px" >Many Stuff</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Python Utils</h2>
+                <p>Bellow there are some useful scripts to work with python.<br>
+                    NOTE: Page in development, I put some simple examples to test the layout! 
+                </p>
+                <hr class="major" />
+                    <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+                    <p>How to easily get some variable from a large data table: </p>
+                    <pre><code>
+    def getvar(param=None,File=None,HEADER=0):
+        """
+        Get a numerical variable from a table.
+        HEADER: if == 1, display the file's header.
+        """
+        infile = open(File, 'r')
+        firstLine = infile.readline()
+        header=firstLine.split(',')
+        if HEADER==1:
+            print header
+        else:
+            ind=header.index(param)
+            return np.loadtxt(File,usecols=(ind),comments="#", delimiter=",", unpack=False)
+                    </code></pre>
+                    <hr class="major" />
+                    <p>How to easily get some string variable from a large data table: </p>
+                    <pre><code>
+    def getstr(string,File):
+        """
+        Get a string variable.
+        """
+        infile = open(File, 'r')
+        firstLine = infile.readline()
+        header=firstLine.split(',')
+        ind=header.index(string)
+        return np.loadtxt(File,dtype='str',usecols=(ind),comments="#", \
+            delimiter=",", unpack=False)
+                    </code></pre>          
+                    
+                    <p>
+                        ...
+                    </p>
+
+
+        </div>
+    </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <!-- <h2>About Me</h2> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- <h2>Footer</h2> -->
+    </div>
+
+</body>
+
+</html>

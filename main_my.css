@@ -1,0 +1,779 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,600,400italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=Cormorant Garamond:400,600,400italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=Expletus+Sans:400,600,400italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=Audiowide:400,600,400italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:400,600,400italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Upright:400,600,400italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=VT323:400,600,400italic,600italic");
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+/* @import url("'https://fonts.googleapis.com/css?family=Spectral:400,600,400italic,600italic"); */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v5/toadOcfmlt9b38dHJxOBGLhZfOo4eSOlrve6pGrXHAo.woff) format('woff');
+  }
+
+/* * {	font-family: "Cormorant Upright", sans-serif; } */
+* {	font-family: VT323, sans-serif; }
+
+/* Header/Blog Title */
+
+.header {
+    padding: 30px;
+    text-align: center;
+    /* background: white; */
+    /* font-family: "Expletus Sans", serif; */
+    /* font-family: "Cormorant", serif; */
+    color: #fffdd0;
+    font-size: 24px;
+}
+
+body {
+    /* opacity: 0.5; */
+    background-image: url("images/eso0931ao.png");
+    /* background-size: auto; */
+    background-size: 2900px 2900px;
+    /* overflow: hidden; */
+    /* background-color: slategray; */
+    /* background-color: #311432; */
+    /* background-color: #48494B; */
+    background-color: #2B1700;
+    /* background-color: rgb(82, 82, 82); */
+    /* filter: alpha(opacity=50); */
+    /* background-blend-mode: lighten; */
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+  }
+
+.center {
+    text-align:center;
+  }
+
+
+/* LAST FM */
+#last
+{
+  display:none;
+  position:fixed;
+  bottom:0px;
+  right:0px;
+  width:200px;
+}
+
+#last img
+{
+    padding-right:5px;
+}
+
+#last p
+{
+  float:left;
+}
+
+#last div
+{
+  margin:16px;
+}
+
+/* #backgroundImage:before {
+    opacity: 0.4;
+} */
+
+.header h1 {
+    font-size: 80px;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Expletus Sans", serif; */
+    /* font-family: "Cormorant", serif; */
+    font-style: normal;
+    font-style: oblique;
+    color: #fffdd0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* color: #3d4449; */
+    /* color: #7f888f; */
+    color: white;
+    /* color: blue; */
+    /* color: #fffdd0; */
+    /* font-family: "Roboto Slab", serif; */
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Expletus Sans", serif; */
+    /* font-family: "Cormorant", serif; */
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.0em 0 0.5em 0;
+    /* font-variant: small-caps; */
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1.1em;
+    /* color: #6699CC; */
+}
+
+h5 {
+    font-size: 0.9em;
+}
+
+
+h6 {
+    font-size: 30px;
+    font-variant: small-caps;
+    text-align:center;
+}
+
+
+
+code {
+    background: rgb(8, 8, 8);
+    border-radius: 0.375em;
+    border: solid 2px rgba(210, 215, 217, 0.75);
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.7em;
+    color:green#fffdd0;
+    margin: 0 0.25em;
+    padding: 0.25em 0.65em;
+}
+
+pre {
+    -webkit-overflow-scrolling: touch;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    margin: 0 0 2em 0;
+}
+
+pre code {
+    display: block;
+    line-height: 1.75;
+    padding: 1em 1.5em;
+    overflow-x: auto;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+  }
+
+/* .videoWrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+/* #player-overlay {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000
+      z-index:999;
+  } */
+
+p {
+    margin: 0 0 2em 0;
+    font-size: 24px;
+    text-align:justify;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    /* background-color: #333; */
+    background-color: #333;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Expletus Sans", serif; */
+    /* font-family: "Cormorant", serif; */
+    color: #fffdd0;
+    margin-top: -18px;
+    /* display: flex; */
+    /* align-items: right; */
+    /* width: 20% 19% ; */
+    /* height: 300px; */
+    /* text-align: right; */
+    /* align-content: right; */
+    /* justify-content: right; */
+}
+.topnav-index {
+    overflow: hidden;
+    /* background-color: #333; */
+    background-color: #333;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Expletus Sans", serif; */
+    /* font-family: "Cormorant", serif; */
+    color: #fffdd0;
+    margin-top: -94px;
+    text-align: center;
+    /* display: flex; */
+    /* align-items: right; */
+    /* width: 20% 19% ; */
+    /* height: 300px; */
+    /* text-align: right; */
+    /* align-content: right; */
+    /* justify-content: right; */
+}
+.topnav-index a {
+    float: left;
+    display: block;
+    color: #fffdd0;
+    /* color: #f2f2f2; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 10px 1px;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Cormorant Garamond", serif; */
+}
+/* ul.actions {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    cursor: default;
+    list-style: none;
+    margin-left: -1em;
+    padding-left: 0;
+} */
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #fffdd0;
+    /* color: #f2f2f2; */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 10px 1px;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Cormorant Garamond", serif; */
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+.topnav-right {
+    float: right;
+  }
+
+
+.align-justify {
+	text-align: justify;
+	/* color: black; */
+}
+
+/* ul {
+    list-style: none;
+} */
+
+
+/* #menu ul { */
+    /* -moz-user-select: none; */
+    /* -webkit-user-select: none; */
+    /* -ms-user-select: none; */
+    /* user-select: none; */
+    /* color: #3d4449;
+    color: white;
+    /* background-color: antiquewhite; */
+    /* background-image: url("images/background_arp273_hst_from_nasa.png"); */
+    /*font-family: "Roboto Slab", serif;*/
+    /* font-family: "EB Garamond", serif;
+    font-family: 400;
+    letter-spacing: 0.075em;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    text-transform: uppercase;
+} */
+
+
+/* Change color on hover */
+
+.topnav a:hover {
+    /* background-color: #ddd; */
+    color: #fffdd0;
+    /* color: black; */
+    /* font-family: "EB Garamond", serif; */
+}
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+/* Left column */
+
+.textfile {
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Cormorant Garamond", serif; */
+    font-size: 24px;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Cormorant Garamond", serif; */
+    color: #fffdd0;
+    font-size: 24px;
+}
+
+
+/* Right column */
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    /* background-color: #f1f1f1; */
+    padding-left: 20px;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Cormorant Garamond", serif; */
+    color: #fffdd0;
+    font-size: 20px;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.responsive-object {
+    position: relative;
+    padding-bottom: 67.5%;
+    height: 0;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+
+.portrait {
+    height: 80px;
+    width: 30px;
+}
+
+.landscape {
+    height: 30px;
+    width: 80px;
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+}
+
+
+/* Fake image */
+
+.fakeimg {
+    /* background-color: #aaa; */
+    background-color: #363636;
+    opacity: .7;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Add a card effect for articles */
+
+.card {
+    /* background-color: white; */
+    padding: 20px;
+    margin-top: 20px;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Cormorant Garamond", serif; */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    /* background: #ddd; */
+    margin-top: 20px;
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Cormorant Garamond", serif; */
+    color: purple;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+/* Button */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    /* appearance: none; */
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color:rgba(255, 255, 255, 0.541);
+    /* background-color: antiquewhite; */
+    /* background-image: url("images/background_arp273_hst_from_nasa.png"); */
+    border-radius: 1.075em;
+    border: 0;
+    box-shadow: inset 0 0 0 2px black;
+    color: rebeccapurple !important;
+    cursor: pointer;
+    display: inline-block;
+    /* font-family: "Roboto Slab", serif; */
+    /* font-family: "EB Garamond", serif; */
+    /* font-family: "Cormorant Garamond", serif; */
+    font-size: 1.2em;
+    font-weight: 100;
+    height: 3.5em;
+    /* letter-spacing: 0.075em; */
+    line-height: 1.7em;
+    padding: 0 1.25em;
+    margin-bottom: 20px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* text-transform: uppercase; */
+    white-space: nowrap;
+    align-items: center;
+    display: inline-block;
+}
+/* .button a:hover {
+    /* color: #ffffff; */
+    /* color:black; */
+    /* color:magenta; */
+/* } */
+.test{
+    /* height:200px; */
+    width:90%;
+}
+/* .menu li {
+    padding: 10px;
+    list-style: none;
+    width: 0%;
+}
+  .menu li a {
+    color: #fff;
+    border: 3px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: block;
+    text-decoration: none;
+    padding: 5px 0px 5px 0;
+    margin: 0 20px;
+  } */
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0px;
+    background-color:rgb(82, 82, 82);
+    /* background-color: transparent; */
+    /* background-image: img-noise.png; */
+    overflow-x: hidden;
+    padding: 0px 0px 0px 0px;
+    transition: 0.5s;
+    /* font-size: 14px; size of side bar buttons */
+    padding-top: 160px;
+    /* text-align: center; */
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .sidebar a {
+    /* padding: 8px 8px 8px 32px; */
+    text-decoration: none;
+    /* font-size: 25px; */
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    align-items: center;
+    /* margin-left: 10px; */
+    text-align: center;
+    /* background-color: transparent; */
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+    /* background-color: transparent; */
+    align-items: center;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    /* background-color: transparent; */
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    /* background-color: #111; */
+    /* background-color: transparent; */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    align-items: center;
+  }
+
+  .openbtn:hover {
+    /* background-color: #444; */
+    /* background-color: transparent; */
+  }
+
+  #main {
+    /* position: fixed; */
+    transition: margin-left .5s;
+    padding: 0px;
+    margin-top: -0px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+hr {
+    display: block;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+hr.text {
+    display: block;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+hr.major {
+    display: block;
+    /* margin-before: 0.5em; */
+    /* margin-after: 0.5em; */
+    /* margin-start: auto; */
+    /* margin-end: auto; */
+    overflow: hidden;
+    border-style: inset;
+    border-width: 10px;
+    /* margin-top: -50px; */
+    /* height: 10em; */
+}
+/* hr.zig-zag {
+    border: none;
+    width: 99%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 40px;
+    background: linear-gradient(135deg,gray 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, gray 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, gray 25%, transparent 25%),
+    linear-gradient(45deg, gray 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: #EC173A;
+} */
+
+/* .nav{
+    margin-top:167px;
+    width:1024px;
+    height:34px;
+}
+
+.nav_button{
+    height:34px;
+    margin:0 auto;
+    margin-right:10px;
+    float:left;
+} */
+
+/*
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+    background-color: rgba(245, 106, 106, 0.05);
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active,
+.button:active {
+    background-color: rgba(245, 106, 106, 0.15);
+}
+
+input[type="submit"].icon:before,
+input[type="reset"].icon:before,
+input[type="button"].icon:before,
+button.icon:before,
+.button.icon:before {
+    margin-right: 0.5em;
+}
+
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+button.fit,
+.button.fit {
+    width: 100%;
+}
+
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+button.small,
+.button.small {
+    font-size: 0.6em;
+}
+
+input[type="submit"].large,
+input[type="reset"].large,
+input[type="button"].large,
+button.large,
+.button.large {
+    font-size: 1em;
+    height: 3.65em;
+    line-height: 3.65em;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary {
+    background-color: #f56a6a;
+    box-shadow: none;
+    color: #ffffff !important;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+button.primary:hover,
+.button.primary:hover {
+    background-color: #f67878;
+}
+
+input[type="submit"].primary:active,
+input[type="reset"].primary:active,
+input[type="button"].primary:active,
+button.primary:active,
+.button.primary:active {
+    background-color: #f45c5c;
+}
+
+input[type="submit"].disabled,
+input[type="submit"]:disabled,
+input[type="reset"].disabled,
+input[type="reset"]:disabled,
+input[type="button"].disabled,
+input[type="button"]:disabled,
+button.disabled,
+button:disabled,
+.button.disabled,
+.button:disabled {
+    pointer-events: none;
+    opacity: 0.25;
+} */
